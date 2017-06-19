@@ -27,7 +27,9 @@ public class PancakeHouseMenuIterator implements Iterator{
     }
     
     public Object next(){
-        
+        MenuItem menu = pancakeHouseMenu.getMenu(index);
+        index++;
+        return menu;
     }
 
 }

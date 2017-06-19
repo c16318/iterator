@@ -6,19 +6,17 @@ package menu;
  * @author c16318
  */
 public class Waitress {
-   // Menu pancakeMenu;
     MenuItem d;
-    
     DinerMenu dinerMenu = new DinerMenu();
     PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
-   // Iterator it = dinerMenu.iterator();
+
     
     public void printMenu(){
-        //Iterator pancakeIterator = 
         Iterator dinerIterator = dinerMenu.iterator();
         Iterator pancakeIterator = pancakeHouseMenu.iterator();
         
         printMenu(dinerIterator);
+        printMenu(pancakeIterator);
     }
     
     private void printMenu(Iterator it){
